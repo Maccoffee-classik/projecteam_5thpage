@@ -1,0 +1,257 @@
+.main-form
+	font-family: Assistant
+	min-height: 708px
+	height: 100vh
+	background: #F5F4F9
+
+	.container
+		max-width: 100vw
+		padding-left: 1.67vw
+		padding-right: 1.67vw
+		text-align: right
+	&-wrapper
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 24xp
+	.form-group
+		margin-top: 40px
+	.form-control
+		background: #FFFFFF
+		border: 0.25px solid rgba(117, 121, 142, .25)
+		border-radius: 2px
+		&:focus
+			box-shadow: none
+			border: 0.25px solid rgba(117, 121, 142, 1)
+.dropdown-toggle::before
+	display: inline-block
+	margin-right: 0.55em
+	vertical-align: 0.255em
+	content: ""
+	background: url(../img/arrow-down.svg) left center no-repeat
+	background-size: 100%
+	width: 13px
+	height: 7.5px
+	padding-right: 10px
+.dropdown-toggle::after
+	display: none
+.btn
+	background: #ffffff
+	border-bottom: 0.25px solid rgba(117, 121, 142, .25)
+	border-top: 0.25px solid rgba(117, 121, 142, .25)
+	border-left: 0.25px solid rgba(117, 121, 142, .25)
+	border-top-right-radius: 0
+	border-bottom-right-radius: 0
+	border-top-left-radius: 2px
+	border-bottom-left-radius: 2px
+	align-items: center
+	display: flex
+	font-size: 24px
+	font-weight: 700
+	&:focus
+		box-shadow: none
+		border-bottom: 0.25px solid rgba(117, 121, 142, .9)
+		border-top: 0.25px solid rgba(117, 121, 142, .9)
+		border-left: 0.25px solid rgba(117, 121, 142, .9)
+		border-right: 0.25px solid rgba(117, 121, 142, .9)
+	&-round
+		display: inline-block
+		width: 41px
+		height: 41px
+		border-radius: 50%
+		border: 1px solid #DB2B6F
+
+		background: url(../img/+.svg) center center no-repeat
+		&:hover
+			background: url(../img/+white.svg) center center no-repeat,linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+		&-label
+			font-weight: 400
+			font-size: 12px
+			line-height: 16px
+			text-align: right
+			color: #DB2B6F
+			position: absolute
+			right: 50px
+			top: 12px
+	&-group
+		margin-top: 16px
+		position: relative
+		vertical-align: middle
+		display: block
+
+.form
+	&-title
+		font-weight: 700
+		font-size: 24px
+		text-align: right
+		text-transform: uppercase
+		color: #2A3043
+		margin-top: 24px
+		margin-bottom: 22px
+
+	.menu_toggle
+		position: relative
+	.hamburger
+		position: absolute
+		height: 100%
+		width: 100%
+		display: block
+.hamburger-cross,.hamburger
+	span
+		background: #23b1fe
+.menu_toggle .hamburger span
+	width: 0
+	height: 2px
+	position: relative
+	top: 0
+	left: 0
+	margin: 4px 0
+	display: block
+
+	border-radius: 3px
+	-webkit-transition: .2s ease-in-out
+	-o-transition: .2s ease-in-out
+	transition: .2s ease-in-out
+
+.main
+	background: #F5F4F9
+	&-top-wrapper
+		display: flex
+		flex-direction: column
+		padding-top: 24px
+		padding-right: 24px
+
+	&-title
+		display: flex
+		margin-left: auto
+		font-weight: 700
+		font-size: 24px
+		line-height: 31px
+		text-align: right
+		letter-spacing: 1.14286px
+		text-transform: uppercase
+		color: #2A3043
+		margin-bottom: 10px
+
+	&-button
+		display: flex
+		margin-left: auto
+		background: url(../img/btn_bg.png) left center no-repeat, linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+		background-size: 32%,100%
+		color: #ffffff
+		font-weight: 700
+		font-size: 14px
+		line-height: 18px
+		padding: 13px 13px 13px 55px
+		border-radius: 30px
+		font-family: Assistant
+		margin-bottom: 24px
+		b
+			font-size: 21px
+		&:hover
+			color: #495057
+			background: url(../img/btn_bg_hover.png) left center no-repeat, linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+	&-subtitle-links
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+
+		li
+			background: url(../img/sort_up.svg) left center no-repeat
+			font-weight: 400
+			font-size: 10px
+			line-height: 13px
+			text-align: right
+			color: #000000
+			padding-left: 10px
+			b
+				color: #75798E
+				font-weight: 400!important
+			&:first-child
+				background: url(../img/arrow.svg) left center no-repeat
+		.link-active
+			font-weight: 700
+			background: url(../img/sort_down.svg) left center no-repeat
+	&-content-wrapper
+		padding: 9px 13px 40px 13px
+		background: #ffffff
+	&-card
+		padding-top: 18px
+		padding-bottom: 11px
+		border-bottom: 0.5px solid #75798E
+	&-sticker
+		background-color: #723A83
+		padding: 1px 4px 1px 4px
+		border-radius: 2px
+		font-weight: 400
+		font-size: 12px
+		color: #FFFFFF
+		&__pink
+			background-color: #DB2B6F
+	&-card-title
+		font-weight: 400
+		font-size: 12px
+		color: #000000
+		text-align: right
+	&-card-group
+		justify-content: flex-end
+		margin-top: 6px
+		margin-bottom: 6px
+
+	&-card-subtitle
+		font-weight: 400
+		font-size: 10px
+		text-align: right
+		color: #000000
+		padding-right: 14px
+		&__flag
+			background: url(../img/flag.svg) right center no-repeat
+		&__triangle
+			background: url(../img/triangle.svg) right center no-repeat
+	&-card-text
+
+		font-weight: 400
+		font-size: 10px
+		text-align: right
+		color: #000000
+
+		&__percent
+			display: flex
+			justify-content: space-between
+
+		&__ellipse
+			padding-right: 14px
+			background: url(../img/ellipse.svg) right center no-repeat
+	&-percent-box
+		display: flex
+
+		font-size: 10px
+		text-align: center
+		border-radius: 2px
+		padding: 0px 4px
+
+		&__orange
+			color: #FF3F00
+			border: 1px solid#FF3F00
+
+		&__green
+			color: #60A910
+			border: 1px solid#60A910
+.copipast
+	padding-top: 11px
+	font-weight: 300
+	font-size: 12px
+
+	text-align: center
+
+	color: #000000
+	&-after
+		font-weight: 300
+		font-size: 12px
+
+		text-align: center
+		color: #000000
+		padding-bottom: 16px
+		b
+			color: #009FCF
